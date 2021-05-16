@@ -42,5 +42,9 @@ docker run \
 	--rm \
 	-v $XAUTHFILE:/home/docker/.Xauthority \
 	-v /tmp/.X11-unix:/tmp/.X11-unix \
+	-v /data/docker_bind/$USER:/home/docker/mydata \
+	--memory=16g \
+	--memory-reservation=10g \
+	--cpus=4 \
 	$DOCKERUSER/$DOCKERIMAGE \
 	openbox-session
