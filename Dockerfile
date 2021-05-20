@@ -174,7 +174,7 @@ RUN LNUM=$(sed -n '/launcher_item_app/=' /etc/xdg/tint2/tint2rc | head -1) && \
   sed -i "/^launcher_item_app = tint2conf\.desktop$/d" /etc/xdg/tint2/tint2rc
 
 
-RUN wget https://ndownloader.figshare.com/files/28026702?private_link=c9225c4fe14ba0d0e5e7 -O slicer.tgz \
+RUN wget https://ndownloader.figshare.com/files/28084380?private_link=c9225c4fe14ba0d0e5e7 -O slicer.tgz \
  && tar xzf slicer.tgz -C /home/docker/ \
  && rm slicer.tgz \
  && chown -R 1000:1000 /home/docker/slicer
